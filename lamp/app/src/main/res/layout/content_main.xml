@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#DCFFFF"
+        android:text="蓝牙:未连接\n状态:未知\n亮度:0%\n色调:未知\n开关:未知\n定时:未定时\n风扇:未知\n"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        android:layout_below="@+id/checkBox1"
+        android:layout_alignStart="@+id/checkBox1"
+        android:layout_alignLeft="@+id/checkBox1"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignTop="@+id/editText1"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@+id/editText1"
+        android:gravity="center"
+        android:text="时"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignTop="@+id/editText2"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@+id/editText2"
+        android:gravity="center"
+        android:text="分"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignTop="@+id/editText3"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@+id/editText3"
+        android:gravity="center"
+        android:text="秒"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        android:layout_below="@+id/checkBox2"
+        android:layout_alignStart="@+id/checkBox2"
+        android:layout_alignLeft="@+id/checkBox2"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_alignTop="@+id/editText4"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@id/editText4"
+        android:gravity="center"
+        android:text="%的亮度打开"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        android:layout_below="@+id/checkBox3"
+        android:layout_alignStart="@+id/checkBox3"
+        android:layout_alignLeft="@+id/checkBox3"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        android:layout_below="@+id/checkBox4"
+        android:layout_alignStart="@+id/checkBox4"
+        android:layout_alignLeft="@+id/checkBox4"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="160dp"
+        android:text="启用物理开关"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:text="定时"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView6"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:text="以"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView8"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:text="启用风扇功能"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignTop="@+id/checkBox2"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@+id/checkBox2"
+        android:background="@null"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="00" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@+id/textView3"
+        android:background="@null"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="00" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@+id/textView4"
+        android:background="@null"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="00" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="36dp"
+        android:layout_height="32dp"
+        android:layout_alignTop="@+id/checkBox3"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@id/checkBox3"
+        android:background="@null"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="100" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView9"
+        android:layout_alignLeft="@+id/textView9"
+        android:layout_below="@+id/textView9"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:text="应用设置" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:text="蓝牙管理" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="105dp"
+        android:layout_height="60dp"
+        android:layout_alignStart="@+id/button4"
+        android:layout_alignLeft="@+id/button4"
+        android:layout_alignTop="@+id/button5"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_toLeftOf="@+id/button5"
+        android:text="开/关"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="105dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@+id/button6"
+        android:layout_marginTop="0dp"
+        android:layout_toLeftOf="@+id/button6"
+        android:text="冷/暖色"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="105dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/button6"
+        android:layout_alignStart="@+id/button6"
+        android:layout_alignLeft="@+id/button6"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:text="亮度+"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="105dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="亮度-"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="105dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@+id/button5"
+        android:layout_alignEnd="@+id/button8"
+        android:layout_alignRight="@+id/button8"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_toRightOf="@+id/button5"
+        android:text="正常/强冷"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="105dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@+id/button6"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@+id/button6"
+        android:text="关闭风扇"
+        android:textSize="18sp" />
+
+</RelativeLayout>

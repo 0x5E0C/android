@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView100"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="通讯协议:\n"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView101"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="android端:"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView102"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="同步类："
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView103"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="01010101" />
+
+    <TextView
+        android:id="@+id/textView104"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="设置类："
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView105"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1(物理开关)(启用亮度)(亮度)(亮度)(亮度)(风扇)(启用定时)" />
+
+    <TextView
+        android:id="@+id/textView106"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="按钮类："
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView107"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2(开关)(调色)(亮度+)(亮度-)(风扇模式切换)(关闭风扇)1" />
+
+    <TextView
+        android:id="@+id/textView108"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="按钮类："
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView109"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3时时分分秒秒1\n" />
+
+    <TextView
+        android:id="@+id/textView110"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MCU端:"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView111"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="应答类："
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView112"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="400000001" />
+
+    <TextView
+        android:id="@+id/textView113"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="同步类："
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView114"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5(状态)(亮度)(亮度)(亮度)(开关)(风扇)(色调)(定时状态)\n" />
+
+    <TextView
+        android:id="@+id/textView115"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:text="designed by wwx\n2020.3.3" />
+
+</LinearLayout>
